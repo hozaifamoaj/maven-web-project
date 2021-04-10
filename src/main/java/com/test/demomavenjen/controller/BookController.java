@@ -10,7 +10,7 @@ public class BookController {
 
     @GetMapping("")
     public String welcome(){
-        return "welcome home";
+        return "welcome homeasdasda";
     }
 
     @GetMapping("hello")
