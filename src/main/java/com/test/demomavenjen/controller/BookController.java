@@ -5,10 +5,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/demomavenjen/")
 public class BookController {
 
-    @GetMapping("/hello")
+    @GetMapping("")
+    public String welcome(){
+        return "welcome home";
+    }
+
+    @GetMapping("hello")
     public String hello(){
         return "Hello world";
     }
